@@ -2,8 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Wrap from 'wrap';
 
-const Index    = lazy(() => import('contents/index'));
-const Error404 = lazy(() => import('contents/error/error404'));
+import Index from 'contents/index';
 
 const Router = props => {
   return (
@@ -16,13 +15,7 @@ const Router = props => {
         >
           <Switch>
             <Route
-              exact
-              path="/"
-              render={(props) => <Index />}
-            />
-
-            <Route
-              component={Error404}
+              component={Index}
             />
           </Switch>
         </Suspense>

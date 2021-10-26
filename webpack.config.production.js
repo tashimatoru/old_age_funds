@@ -9,7 +9,7 @@ module.exports = merge(common, {
   mode: 'production',
   performance: { hints: false },
   output: {
-    path: path.join(__dirname, "/build/production"),
+    path: path.join(__dirname, "/build"),
     filename: 'bundle.js'
   },
   plugins: [
