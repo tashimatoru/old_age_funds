@@ -1,0 +1,51 @@
+{
+  "name": "react-app",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.4.0",
+    "js-yaml-loader": "^1.2.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config webpack.config.js",
+    "build:production": "cross-env NODE_ENV=production  webpack --progress --config webpack.config.production.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "transform-inline-environment-variables",
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-optional-chaining"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
