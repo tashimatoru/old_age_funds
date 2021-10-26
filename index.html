@@ -12,7 +12,7 @@
     <script>
       window.addEventListener("DOMContentLoaded", function() {
         var script = document.createElement("script");
-        script.src = "./bundle.js?" + parseInt(new Date().getTime() / 1000);
+        script.src = "/bundle.js?" + parseInt(new Date().getTime() / 1000);
         script.async = false;
         document.body.appendChild(script);
       });
