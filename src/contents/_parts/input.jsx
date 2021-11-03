@@ -56,7 +56,7 @@ class Input extends React.Component {
               formNode = (
                 <TextField
                   label={row?.label}
-                  defaultValue={row?.defaultValue}
+                  value={row?.value}
                   helperText={row?.helperText}
                   InputProps={{
                     endAdornment: <>{row?.endAdornment || "円"}</>,
@@ -73,7 +73,7 @@ class Input extends React.Component {
               formNode = (
                 <TextField
                   label={row?.label}
-                  defaultValue={row?.defaultValue}
+                  value={row?.value}
                   helperText={row?.helperText}
                   InputProps={{
                     endAdornment: <>{row?.endAdornment || "歳"}</>,
@@ -90,7 +90,7 @@ class Input extends React.Component {
                 <TextField
                   label={row?.label}
                   type="date"
-                  defaultValue={row?.defaultValue}
+                  value={row?.value}
                   helperText={row?.helperText}
                   InputLabelProps={{
                     shrink: true,
